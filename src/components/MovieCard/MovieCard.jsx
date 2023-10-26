@@ -1,7 +1,7 @@
-import { Badge } from '@mui/material';
 import React from 'react';
-import ContentModal from '../ContentModal/ContentModal';
-
+import { Badge } from '@mui/material';
+import { img_300, unavailable } from '../../config/config'
+import './MovieCard.css'
 
 const MovieCard = ({
     id,
