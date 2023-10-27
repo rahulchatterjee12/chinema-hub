@@ -1,8 +1,9 @@
 import React from 'react';
-import './Header.css'
+import './Header.css';
+
 const Header = () => {
     return (
-        <span className='header'>Chinema Hub</span>
+        <span onClick={() => window.scroll(0, 0)} className='header'>Chinema Hub</span>
     )
 }
 

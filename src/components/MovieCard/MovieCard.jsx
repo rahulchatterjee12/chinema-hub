@@ -12,9 +12,9 @@ const MovieCard = ({
     vote_average,
 }) => {
     return (
-        <>
+        <div className='media'>
             <Badge
-                badgeContent={vote_average}
+                badgeContent={Number(vote_average.toFixed(1))}
                 color={vote_average > 6 ? "primary" : "secondary"}
             />
             <img
@@ -27,7 +27,7 @@ const MovieCard = ({
                 {media_type === "tv" ? "TV Series" : "Movie"}
                 <span className="subTitle">{date}</span>
             </span>
-        </>
+        </div>
     )
 }
 
