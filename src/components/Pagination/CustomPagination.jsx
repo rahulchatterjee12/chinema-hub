@@ -15,8 +15,6 @@ const CustomPagination = ({ count = 1, setPage }) => {
             }}
         >
             <Pagination
-                showFirstButton
-                showLastButton
                 count={count}
                 onChange={(event, newPage) => handleChange(newPage)}
             />

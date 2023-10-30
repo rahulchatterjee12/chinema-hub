@@ -36,7 +36,7 @@ const Trending = () => {
                     />
                 ))}
             </div>
-            <CustomPagination setPage={setPage} count={containt.total_pages} />
+            <CustomPagination setPage={setPage} count={10} />
         </>
     )
 }

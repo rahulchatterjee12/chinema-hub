@@ -8,6 +8,7 @@ import Trending from './Pages/Trending/Trending'
 import Movies from './Pages/Movies/Movies'
 import Series from './Pages/Series/Series'
 import Search from './Pages/Search/Search'
+import Details from './Pages/Details/Details';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
       <div className="app">
         <Container>
           <Routes>
-            <Route path="/" element={<Trending />} />
-            <Route path="/movies" element={<Movies />} />
-            <Route path="/series" element={<Series />} />
-            <Route path="/search" element={<Search />} />
+            <Route path="/" exact element={<Trending />} />
+            <Route path="/movies" exact element={<Movies />} />
+            <Route path="/series" exact element={<Series />} />
+            <Route path="/search" exact element={<Search />} />
+            <Route path="/details/:type/:id" element={<Details />} />
           </Routes>
         </Container>
       </div>
